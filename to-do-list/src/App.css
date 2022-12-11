@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+  display: block;
+  margin-top: 100px;
+  background-color: white;
+  min-height: 500px;
+}
+
+
+body {
+  padding: 50px;
+  color: black;
+  min-height: 100vh;
+  background: black;
+  text-rendering: optimizeSpeed;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.form1 {
+  padding: 50px;
+}
+
+.inp_ok{
+  border-color: #FFCD04;
+  width: 1000px;
+  height: 40px;
+}
+
+.inp_error{
+  border-color: red;
+  width: 1000px;
+  height: 40px;
+}
+
+
+
+
+/* .btn1:disabled{
+  color:aliceblue;
+  background-color:gray;
+  height: 45px;
+  border-color: #008392;
+  margin-left: 35px;
+} */
+
+
+#h31{
+  margin-right: 1070px;
+  margin-bottom: 0px;
+}
+
+
+.div1{
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+  
+}
+
+
+#inp3{
+  display: flex;
+  justify-content:right;
+  margin-right: 370px;
+
+}
+
+#inp3>input{
+  width: 20px;
+  height: 20px;
+}
+#inp3>h4{
+  margin-top: 5px;
+}
+
+ 
+.tbl1{
+  width: 1600px;
+  height: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid white;
+  
+}
+
+
+#btn2{
+  background-color: white;
+  border: 1px solid white;
+}
+
+
+#inp2{
+  width: 20px;
+  height: 20px;
+}
+
+#td1{
+  display: flex;
+}
+
+.tbl1>tr{
+  border-collapse: collapse;
+}
+
+
+.tbl1>thead>td {
+  color: #669;
+  border-top: 1px solid #e8edff;
+  padding: 10px 15px;
+}
+.tbl1>thead>tr:hover td {
+  background: #F6F6F6;
+}
+
+#h222{
+  font-family: cursive;
+}
+
+.label1{
+  display: flex;
+  color: red;
+  margin-left: 300px
+}
+
+.hideLabel{
+  display: None;
+}
+
+.taskHidden{
+  display: none;
+}
+
+#inputter{
+  width: clamp(300px,100%,1000px);
+}
+
+.btn1{
+  color:aliceblue;
+  background-color:#008392;
+  height: 45px;
+  border-color: #008392;
+  margin-left: 35px;
+  
+}
