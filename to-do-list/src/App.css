@@ -2,7 +2,7 @@
   text-align: center;
   display: block;
   margin-top: 100px;
-  background-color: white;
+  background-color: grey;
   min-height: 500px;
 }
 
@@ -14,6 +14,9 @@ body {
   background: black;
   text-rendering: optimizeSpeed;
   font-family: "Roboto", sans-serif;
+  background: url(https://www.spica.com/steam/dynamic/W1siZmYiLCIvaG9tZS9yYWlscy9jbXMvcHVibGljL3NpdGVzLzVkNjgzY2JkMjRkMzVmMTE0NzdmZWQwZi9jb250ZW50X2VudHJ5NWQ4YjIxNzUyNGQzNWYxMTQ3N2ZmNjAwLzYwNjQxZWEwMjRkMzVmMTZmMmRjMGMyZi9maWxlcy9TcGljYUJsb2dfRXZlcnl0aGluZy1hYm91dC1hLXRvLWRvLWxpc3QuanBnIl0sWyJwIiwidGh1bWIiLCIxMTUweDY2MCMiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODIgLXN0cmlwIC1pbnRlcmxhY2UgUGxhbmUiXV0/4f36fc948c6dafc7/SpicaBlog_Everything-about-a-to-do-list.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 
@@ -35,16 +38,6 @@ body {
 
 
 
-
-/* .btn1:disabled{
-  color:aliceblue;
-  background-color:gray;
-  height: 45px;
-  border-color: #008392;
-  margin-left: 35px;
-} */
-
-
 #h31{
   margin-right: 1070px;
   margin-bottom: 0px;
@@ -62,10 +55,13 @@ body {
 
 #inp3{
   display: flex;
-  justify-content:right;
+  justify-content:flex-end;
   margin-right: 370px;
+  position:absolute;
 
 }
+
+
 
 #inp3>input{
   width: 20px;
@@ -134,7 +130,7 @@ body {
 }
 
 #inputter{
-  width: clamp(300px,100%,1000px);
+  width: clamp(150px,100%,1000px);
 }
 
 .btn1{
@@ -144,4 +140,68 @@ body {
   border-color: #008392;
   margin-left: 35px;
   
+}
+
+
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 300px auto;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  width: 20%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #008392;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
