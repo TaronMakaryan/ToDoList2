@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './App.css';
-import './style.css'
+
+
 
 
 
@@ -11,6 +12,8 @@ function App() {
   const[inpStyle, setStyle] = useState("inp_ok");
   const[warning54, setWarningState] = useState(false)
   const[hideCompleted, setHideCompleted] = useState(false)
+
+  const[catchId,setcCatchId]=useState()
 
 
   React.useEffect(()=>{
@@ -70,6 +73,9 @@ function App() {
     }
   }
   
+  function catchID(elm){
+    setcCatchId(elm)
+  }
 
 
 
@@ -103,7 +109,18 @@ function App() {
                   <h2 id="h222">{todo.text}</h2>
                 </td>
                 <td>
-                  <button id="btn2" onClick={()=> deleteTodo(todo.id)}>X</button>
+                  <div className="box">
+	                  <a className="button" href="#popup1" onClick={()=>catchID(todo.id)}>X</a>
+                  </div>
+                  
+                  <div id="popup1" className="overlay" > 
+	                  <div className="popup">
+		                  <h2>Are You Sure You Want to Delete?</h2>
+		                    <a className="close" href="#">&times;</a>
+                        <a className='button' onClick={(catchId)=>deleteTodo(todo.id)}>Yes</a>
+                        <a className="button" href = "popup1">No</a>
+	                  </div>
+                  </div>
                 </td>
               </tr>
             </thead>
